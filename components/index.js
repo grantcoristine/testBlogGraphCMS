@@ -8,3 +8,9 @@ export { default as CommentsForm } from './CommentsForm'
 export { default as Comments } from './Comments'
 export { default as PostDetail } from './PostDetail'
 export { default as Loader } from './Loader'
+export { default as PostForm } from './PostForm'
+export { default as AuthorForm } from './AuthorForm'
+export { default as LoginForm } from './LoginForm'
+export { default as RegisterForm } from './RegisterForm'
+
+
