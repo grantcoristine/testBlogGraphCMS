@@ -24,7 +24,6 @@ export default async function comments(req, res) {
       createComment(data: {name: $name, email: $email, comment: $comment, post: { connect: { slug: $slug }}}) { id }
     }
   `
-
   try {
     //destructuring allows us to pass only req.body instead of req.body.name etc.
     const result = await graphQLClient.request(query, req.body)
@@ -32,6 +31,5 @@ export default async function comments(req, res) {
   } catch (error) {
     console.log(error)
     return res.status(500).send(error);
-
   }
 }
